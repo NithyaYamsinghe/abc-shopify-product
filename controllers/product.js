@@ -40,4 +40,5 @@ module.exports.getAllProducts = async (qNew, qCategory) => {
   } else {
     products = await Product.find();
   }
+  return products;
 };
